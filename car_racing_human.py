@@ -3,6 +3,9 @@ import numpy as np
 import pygame
 from CarRacing_V2 import CarRacing_V2
 
+# Credit to https://github.com/openai/gym/blob/master/gym/envs/box2d/car_racing.py that provides this main script
+# It allows a human player to run and play the simulation to test and visualize the environment
+
 if __name__ == "__main__":
     from pyglet.window import key
 

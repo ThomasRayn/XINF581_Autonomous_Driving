@@ -3,6 +3,10 @@ import torch.nn as nn
 import torchvision
 from torchvision import transforms
 
+# Credit to https://medium.com/dataseries/convolutional-autoencoder-in-pytorch-on-mnist-dataset-d65145c132ac that proposes an autoencoder architecture
+
+# This file provide the basic classes for an autoencoder implementation
+
 class MyCropFunction:
     def __init__(self, height, width):
         self.height = height
@@ -10,8 +14,7 @@ class MyCropFunction:
         
     def __call__(self, x):
         return transforms.functional.crop(x, 0, 0, self.height, self.width)
-
-
+    
 
 class Encoder(nn.Module):
     def __init__(self, encoded_space_dim):
