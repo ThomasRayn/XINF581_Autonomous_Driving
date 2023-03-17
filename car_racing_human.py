@@ -1,7 +1,5 @@
 from gym.envs.box2d.car_racing import CarRacing
 import numpy as np
-import pygame
-from CarRacing_V2 import CarRacing_V2
 
 # Credit to https://github.com/openai/gym/blob/master/gym/envs/box2d/car_racing.py that provides this main script
 # It allows a human player to run and play the simulation to test and visualize the environment
@@ -34,7 +32,7 @@ if __name__ == "__main__":
         if k == key.DOWN:
             a[2] = 0
 
-    env = CarRacing_V2()
+    env = CarRacing()
     env.render()
     env.viewer.window.on_key_press = key_press
     env.viewer.window.on_key_release = key_release
@@ -59,4 +57,3 @@ if __name__ == "__main__":
             isopen = env.render()
             if done or restart or isopen == False:
                 break
-    env.close()
