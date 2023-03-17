@@ -41,4 +41,12 @@ For some further documentations:
 
 To play the game: *python3 car_racing_human.py*
 
-To make PPO Agent play the game: *python3 play_with_ppo.py*
+To make PPO Agent plays the game: *python3 play_with_ppo.py*
+
+## Contacts
+
+May you have a problem or a question? Please contact us:
+- rania.ben-kmicha@ensta-paris.fr
+- desire-nebnoma-alban.ouedraogo@ensta-paris.fr
+- florian.perrocheau@ensta-paris.fr
+- thomas.raynaud@ensta-paris.fr
