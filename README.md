@@ -1,11 +1,10 @@
 # XINF581_Autonomous_Driving
 
-## Description of the repo
-
 This repository provides the basis of an autonomous driving project solved with reinforcement learning.
 
-Requirements:
+## Requirements
 
+All the packages needed to run the files:
 - gym package with box2d environment (for the simulation): *!pip3 install gym[box2d]==0.21.0*
 - pyglet precise version (for the simulation): *!pip3 install pyglet==1.5.27*
 - pygame (for the simulation): *!pip3 install pygame*
@@ -16,7 +15,7 @@ Requirements:
 - numpy
 - matplotlib
 
-Description of the repo:
+## Description of the repository
 
 Files:
 - car_racing_humain.py: provides a script to manually run and play the simulation.
