@@ -4,13 +4,13 @@ This repository provides the basis of an autonomous driving project solved with 
 
 Requirements:
 
-- gym package with box2d environment (for the simulation): !pip3 install gym[box2d]==0.21.0
-- pyglet precise version (for the simulation): !pip3 install pyglet==1.5.27
-- pygame (for the simulation): !pip3 install pygame
-- StableBaselines 3 packages (for the PPO algorithm): !pip3 install stable-baselines3
-- Pillow (for images): !python3 -m pip install --upgrade Pillow
-- OpenCV (for images): !pip3 install opencv-python
-- torch, torchvision: for the installation, refer to https://pytorch.org/
+- gym package with box2d environment (for the simulation): *!pip3 install gym[box2d]==0.21.0*
+- pyglet precise version (for the simulation): *!pip3 install pyglet==1.5.27*
+- pygame (for the simulation): *!pip3 install pygame*
+- StableBaselines 3 packages (for the PPO algorithm): *!pip3 install stable-baselines3*
+- Pillow (for images): *!python3 -m pip install --upgrade Pillow*
+- OpenCV (for images): *!pip3 install opencv-python*
+- torch, torchvision: *for the installation, refer to https://pytorch.org/*
 - numpy
 - matplotlib
 
@@ -35,3 +35,9 @@ For some further documentations:
 
 - Gym CarRacing environment: https://www.gymlibrary.dev/environments/box2d/car_racing/
 - StableBaselines3 documentation: https://stable-baselines3.readthedocs.io/en/master/
+
+# How to use it
+
+To play the game: *python3 car_racing_human.py*
+
+To make PPO Agent play the game: *python3 play_with_ppo.py*
