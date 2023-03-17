@@ -1,5 +1,7 @@
 # XINF581_Autonomous_Driving
 
+## Description of the repo
+
 This repository provides the basis of an autonomous driving project solved with reinforcement learning.
 
 Requirements:
@@ -36,7 +38,7 @@ For some further documentations:
 - Gym CarRacing environment: https://www.gymlibrary.dev/environments/box2d/car_racing/
 - StableBaselines3 documentation: https://stable-baselines3.readthedocs.io/en/master/
 
-# How to use it
+## How to use it
 
 To play the game: *python3 car_racing_human.py*
 
