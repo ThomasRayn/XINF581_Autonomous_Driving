@@ -4,21 +4,32 @@ This repository provides the basis of an autonomous driving project solved with 
 
 Requirements:
 
-- gym package with box2d environment (for the simulation): !pip3 install gym
+- gym package with box2d environment (for the simulation): !pip3 install gym[box2d]==0.21.0
+- pyglet precise version (for the simulation): !pip3 install pyglet==1.5.27
+- pygame (for the simulation): !pip3 install pygame
 - StableBaselines 3 packages (for the PPO algorithm): !pip3 install stable-baselines3
-- Pillow (for images): !pip3 install Pillow
-- torch, torchvision
+- Pillow (for images): !python3 -m pip install --upgrade Pillow
+- OpenCV (for images): !pip3 install opencv-python
+- torch, torchvision: for the installation, refer to https://pytorch.org/
 - numpy
 - matplotlib
 
-Description of the files:
+Description of the repo:
 
+Files:
 - car_racing_humain.py: provides a script to manually run and play the simulation.
-- car_racing_autoencoder.ipynb: provides a notebook for the autoencoder **(DO NOT TRAIN, DATA NOT AVAILABLE)**
-- CarRacing_V2.py: provides a derivated class of the gym class CarRacing in order to have some controls over the agent
-- AutoEncoder.py: provides the basic class for the autoencoder
-- test_ppo.py: provides a script to train and run a PPO algorithm **(CAREFULL, VERY COMPUTATION DEMENDING)**
-- models : folder that provides the saved models for the encoder and the decoder **(PPO were to heavy to be published)**
+- AutoEncoder.ipynb: provides a notebook for the autoencoder and the variational autoencoder **(DO NOT TRAIN, DATA NOT AVAILABLE)**
+- AutoEncoder.py: provides the basic class for the autoencoder and the variational autoencoder
+- DQN.ipynb: provides a notebook for the DQN model **(MODELS NOT PROVIDED)**
+- DQN_AutoEncoder.ipynb: provides a notebook for the DQN+VAE model **(MODELS NOT PROVIDED)**
+- train_ppo.py: provides a script to train a PPO algorithm **(CAREFULL, VERY COMPUTATION DEMENDING)**
+- play_with_ppo.py: provides a script to play with a pre-trained PPO model
+- plot_reward_func; provides scripts to plot the performances of the models according to the logs of their training
+
+Folders:
+- models : folder that provides the saved models for the Encoder, the Decoder, the VAE and the PPO
+- logs: folder that provides log files of the training of the DQN, the DQN+VAE and the PPO models
+- results: folder that provides figures showing the performances of the different models
 
 For some further documentations:
 
